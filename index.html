@@ -33,9 +33,46 @@
     <li>Jazz</li>
   </ol>
 
-<p>
-  Moj rođendan je 7.<sup>12.</sup>, a jedan od poznatih jazz akorda je C<sub>maj7</sub>. 🎶
-</p>
+  <p>
+    Moj rođendan je 7.<sup>12.</sup>, a jedan od poznatih jazz akorda je C<sub>maj7</sub>. 🎶
+  </p>
+
+  <section>
+    <h2>Kontakt forma</h2>
+    <form>
+      <fieldset>
+        <legend>Ostavi poruku</legend>
+
+        <label for="ime">Ime i prezime:</label><br>
+        <input type="text" id="ime" name="ime" placeholder="Upišite svoje ime"><br><br>
+
+        <label for="email">E-mail adresa:</label><br>
+        <input type="email" id="email" name="email" placeholder="primjer@email.com"><br><br>
+
+        <label for="tema">Odaberi temu:</label><br>
+        <select id="tema" name="tema">
+          <option value="glazba">Glazba</option>
+          <option value="putovanja">Putovanja</option>
+          <option value="dizajn">Dizajn</option>
+          <option value="ostalo">Ostalo</option>
+        </select><br><br>
+
+        <label for="boja">Omiljena boja:</label><br>
+        <input list="boje" id="boja" name="boja" placeholder="Odaberi boju">
+        <datalist id="boje">
+          <option value="Ljubičasta">
+          <option value="Tirkizna">
+          <option value="Ružičasta">
+          <option value="Zelena">
+        </datalist><br><br>
+
+        <label for="poruka">Poruka:</label><br>
+        <input type="text" id="poruka" name="poruka" placeholder="Upišite kratku poruku"><br><br>
+
+        <button type="submit">Pošalji</button>
+      </fieldset>
+    </form>
+  </section>
 
 </body>
 </html>
